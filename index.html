@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Healthy | Home</title>
+    <link rel="icon" type="image/png" href="image/logo.png" />
+    <link rel="stylesheet" href="home.css" />
+     <!--font eng-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
+ 
+     <!--font thai-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <span
+          ><a href="index.html" class="menu"
+            ><img
+              src=" https://cdn.pixabay.com/photo/2014/04/03/00/41/house-309113_960_720.png"
+              alt=""
+              id="home" /></a
+        ></span>
+        <span>
+          <a href="search.html" class="menu" id="nutrition">nutrition</a>
+        </span>
+        <span>
+          <a href="calculate.html" class="menu" id="calculate">calculate</a>
+        </span>
+        <span
+          ><a href="article.html" class="menu" id="article">article</a></span
+        >
+        <span><a href="signin.html" class="menu" id="login">login</a> </span>
+        <!-- login -->
+      </div>
+    </header>
+    <h1 class="let">Let's Healthy</h1>
+    <div class="container2" id="select_IF_OMAD" >
+      <div class="IF_OMAD" id="text_IF_OMAD">อดเพื่อสุขภาพ</div>
+      <button class="IF_OMAD" id="IF"><h1>IF</h1></button>
+      <button class="IF_OMAD" id="OMAD"><h1>OMAD</h1></button>
+    </div>
+    <div class="container2" id="Page_IF_OMAD"  hidden>
+      <div class="IF_OMAD" id="text_IF_OMAD_2"> IF อด 16 ชม. </div>
+      <!-- IF อด 16 ชม. OMAD อด 23 ชม.-->
+      <div id="countdown" class="countdown">
+        <div class="time">
+          <h2 id="hour">00</h2>
+          <small>ชั่วโมง</small>
+        </div>
+        <div class="time">
+          <h2 id="minute">00</h2>
+          <small>นาที</small>
+        </div>
+        <div class="time">
+          <h2 id="secound">00</h2>
+          <small>วินาที</small>
+        </div>
+      </div>
+      <button id="cancle">ยกเลิก</button>
+      <div class="container3">
+        <div id="box_1">
+          <label class="font_result">ทำไปแล้ว </label
+          ><input type="text"  class="box_result" id="sum_succes" /><label class="font_result"> วัน</label>
+        </div>
+        <div id="box_2">
+          <label class="font_result">สำเร็จ </label
+          ><input type="text"  class="box_result" id="succes"/><label class="font_result"> วัน</label>
+        </div>
+
+        <div id="box_3">
+          <label class="font_result">ไม่สำเร็จ </label
+          ><input type="text"  class="box_result" id="no_succes"/><label class="font_result"> วัน</label>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container2" id="OMAD_Page" hidden>
+      <div class="IF_OMAD" id="text_IF_OMAD">OMAD อด 23ชม.</div>
+       <button class="IF_OMAD" id="IF"><h1>IF</h1></button>
+       <button class="IF_OMAD" id="OMAD"><h1>OMAD</h1></button>
+    </div> -->
+
+    <!-- <div class="sangbabnee">
+      สร้างแบบนี้
+    </div> -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="home.js"></script>
+    <script src="config.js"></script>
+  </body>
+</html>

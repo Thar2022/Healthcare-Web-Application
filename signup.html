@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Healthy | Sign-up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" type="image/x-icon" href="healthy-fare-for-kids-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+    <div   class="card">
+        <div class="sign-in">Sign-up</div>
+        <!--logo-->
+        <i id="logo" class="fa-solid fa-user-plus"></i>
+        <!--Username-->
+        <div class="login-form">
+            <i class="fa-solid fa-user" id="logo-input"></i>
+            <input type="text" class="input" id="email">
+            <span data-placeholder="E-mail"></span>
+        </div>
+         <!--Email-->
+         <div class="login-form">
+            <i class="fa-solid fa-lock" id="logo-input"></i>
+            <input type="password" class="input" id="password">
+            <span data-placeholder="Password"></span>
+        </div>
+         <!--Password-->
+         <div class="login-form">
+            <i class="fa-solid fa-lock" id="logo-input"></i>
+            <input type="password" class="input" id="password-2">
+            <span data-placeholder="Password"></span>
+        </div>
+        <!--<p>Don't have account?<a href="#">Sign up</a> </p>-->
+        <button  class="btn-submit" id="But_Sign-up" >Sign-up</button>      <!--  ///  -->
+         
+        <a href="signin.html" class="btn-submit" >Back-To-SIGNIN</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function () {
+           $(".input").on("focus", function(){
+               $(this).addClass("focus");
+           });
+           $(".input").on("blur", function(){
+                if($(this).val() == "")
+                    $(this).removeClass("focus");
+
+                if($("#username").val() != "" && $("#password").val() != "" )
+                    $("#logo").addClass("change-color");
+                else
+                $("#logo").removeClass("change-color");
+           });
+       });
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> <!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> <!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> <!-- เพิ่ม  Library -->
+    <script src="config.js"></script> 
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Healthy | Calculate</title>
+    <link rel="stylesheet" href="calculate.css" />
+    <link rel="icon" type="image/png" href="healthy-fare-for-kids-logo.png">
+    <!--font eng-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
+
+    <!--font thai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap" rel="stylesheet">
+
+
+
+    
+  </head>
+
+  <body>
+    <header >
+      <div class="container" >
+        <span><a href="index.html" class="menu"><img  src=" https://cdn.pixabay.com/photo/2014/04/03/00/41/house-309113_960_720.png" alt=""  id="home"></a></span>
+   
+        <span> <a href="search.html" class="menu" id="nutrition">nutrition</a> </span>
+        <span> <a href="calculate.html" class="menu" id="calculate">calculate</a> </span>
+        <span><a href="article.html" class="menu" id="article">article</a></span>
+        <span><a href="signin.html" class="menu" id="login">login</a> </span>
+      </div>
+    </header>
+
+    
+    
+    <section>
+      <h1 class="let">Let's Healthy</h1>
+      
+      <div class="container-10"> 
+      <form id="form" onsubmit="">
+        <!-- ช่องกรอกน้ำหนัก -->
+        <div class="form__group">
+            <label for="weight">น้ำหนัก (kg)</label>
+            <input class="weightbox" type="number" id="weight" placeholder="Ex: 70" step="0.01" required min="20" max="300" >
+        </div>
+        <!-- ช่องกรอกส่วนสูง -->
+        <div class="form__group">
+            <label for="height">ส่วนสูง (cm)</label>
+           <input class="heightbox" type="number" id="height" placeholder="Ex: 160" step="0.01" required min="1" max="240"> 
+        </div>
+        <!-- ช่องกรอกอายุ -->
+        <div class="form__group">
+            <label for="age">อายุ (year) </label>
+            <input class="agetbox" type="number" id="age" placeholder="Ex: 25" step="1" required min="1" max="120">
+        </div>
+        <!-- ช่องกรอกเพศ -->
+        <div class="form__group">
+            <label for="gender">เพศ</label>
+            <select class="genderbox" id="gender" required>
+                <option value="" selected></option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+            </select>
+        </div>
+        <!-- ช่องกรอกกิจกรรม -->
+        <div class="form__group">
+            <label for="activity__level">กิจวัตร</label>
+            <select class="kidjabox" id="activity__level" required >
+                <option value="" selected></option>
+                <option value="1.2">ไม่ออกกำลังกาย</option>
+                <option value="1.375">ออกกำลังกาย 1-2 ต่อสัปดาห์</option>
+                <option value="1.55">ออกกำลังกาย 3-5 ต่อสัปดาห์</option>
+                <option value="1.725">ออกกำลังกาย 6-7 ต่อสัปดาห์</option>
+                <option value="1.9">ทุกวันวันละสองเวลา</option>
+            </select>
+
+        </div>
+        <!-- ช่องกดคำนวณ -->
+        <div class="form__group">
+            <button class="calbox" type="submit" id="result__button"  >คำนวณ</button>
+        </div>
+        <!-- เนื้อหาหลังคำนวณ -->
+         
+
+    </form>
+  
+  </div>
+
+  </section>
+    <div class="container-sum">
+    <div class="container-2">
+      <div class="box">
+        <div class="toppic">BMI</div>
+        
+          <div class="information">
+            ตัวชี้วัดมาตรฐานเพื่อประเมินสภาวะของร่างกายว่า
+            มีความสมดุลของน้ำหนักตัวต่อส่วนสูงอยู่ในเกณฑ์ที่เหมาะสมหรือไม่
+            คำนวณจาก <br>ดัชนีมวลกาย (BMI) = น้ำหนักตัว (กิโลกรัม) / ส่วนสูง (เมตร)2
+            โดยสามารถแปลผลค่า BMI ได้ดังนี้ 
+            <br>ค่า BMI < 18.5 แสดงถึง อยู่ในเกณฑ์น้ำหนักน้อย<br>หรือผอม 
+            <br>ค่า BMI 18.5 – 22.90 แสดงถึง อยู่ในเกณฑ์ปกติ 
+            <br>ค่า BMI 23 – 24.90 แสดงถึงน้ำหนักเกิน 
+            <br>ค่า BMI 25 – 29.90 แสดงถึง โรคอ้วนระดับที่ 1 
+            <br>ค่า BMI 30 ขึ้นไป แสดงถึง โรคอ้วนระดับที่ 2
+          
+
+        </div>
+       
+      </div>
+      <div class="box">
+        <div class="toppic" id="BMI-X">BMI X</div>
+        <input type="text" class="result" id="outBMI" />
+      </div>
+    </div>
+    <div class="container-3">
+      <div class="box">
+        <div class="toppic">BMR</div>
+        
+          <div class="information">
+            อัตราการความต้องการเผาผลาญของร่างกายในชีวิตประจำวันหรือจำนวนแคลอรี่ขั้นต่ำที่ต้องการใช้ในชีวิตแต่ละวัน 
+            <br>การคำนวณ BMR ช่วยในการคำนวณปริมาณแคลอรี่ที่ใช้ต่อวันเพื่อรักษาน้ำหนักปัจจุบันได้
+            <br>สูตรคำนวณ
+            <br>สำหรับผู้ชาย
+            BMR = 66 + (13.7 x น้ำหนักตัวเป็น กก.) + (5 x ส่วนสูงเป็น ซม.) – (6.8 x อายุ)
+            <br>สำหรับผู้หญิง
+            BMR = 665 + (9.6 x น้ำหนักตัวเป็น กก.) + (1.8 x ส่วนสูงเป็น ซม.) – (4.7 x อายุ)
+        </div>
+      </div>
+      <div class="box">
+        <div class="toppic" id="BMI-X">BMR X</div>
+        <input type="text" class="result" id="outBMR"/>
+      </div>
+
+    </div>
+    <div class="container-4">
+      <div class="box">
+        <div class="toppic"> TDEE</div>
+        
+          <div class="information">
+            TDEE คือ พลังงานที่เราใช้ต่อวันทั้งหมดซึ่งรวมพลังงานที่ใช้ในชีวิตประจำวันและพลังงานใช้ในการออกกำลังกาย ภายในเวลา 24 ชั่วโมง
+
+      <br>วิธีการคำนวณ
+      <br>ไม่ออกกำลังกายหรือทำงานนั่งโต๊ะ                    <br>TDEE = BMR*1.2
+      <br>ออกกำลังกายเบาๆ (1-2 ครั้งต่อสัปดาห์)              <br>TDEE = BMR*1.375
+      <br>ออกกำลังกายหนัก (6-7 ครั้งต่อสัปดาห์)              <br>TDEE = BMR*1.725
+      <br>ออกกำลังกายหนักมาก (ทุกวัน วันละ 2 เวลา)          <br>TDEE = BMR*1.9
+        </div>
+      </div>
+      <div class="box" id="TDEE-X">
+        <div class="toppic" id="BMI-X"> TDEE X</div>
+        <input type="text" class="result"  id="outTDEE" />
+      </div>
+    </div>
+    
+
+    
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> <!-- เพิ่ม  Library -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> <!-- เพิ่ม  Library -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> <!-- เพิ่ม  Library -->
+    <script src="caculate.js"></script>
+    <script src="config.js"></script>
+  </body>
+</html>
